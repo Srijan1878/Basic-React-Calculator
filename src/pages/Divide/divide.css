@@ -1,0 +1,13 @@
+/*Styling for the remainder component*/
+.remainderShown {
+  text-align: center;
+  font-size: 35px;
+  transition: all 0.45s;
+  opacity: 1;
+  color: white;
+  margin-top: 8px;
+}
+.remainderHidden{
+  transform: translateY(-100px);
+  opacity: 0;
+}
