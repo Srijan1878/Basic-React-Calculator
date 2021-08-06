@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Topbar from "../../components/topbar/Topbar";
 import "./divide.css";
-
+import { Helmet } from "react-helmet";
 export default function Add() {
   const [value, setValue] = useState({
     firstNumber: "",
@@ -36,6 +36,10 @@ export default function Add() {
     }
   };
   return (
+    <>
+    <Helmet>
+      <title>Divide</title>
+    </Helmet>
     <div className="outerContainer">
       <Topbar />
       <h4 className="pageTitle">DIVISION</h4>
@@ -85,5 +89,6 @@ export default function Add() {
         </div>
       </div>
     </div>
+    </>
   );
 }

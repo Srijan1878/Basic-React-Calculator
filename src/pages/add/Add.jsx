@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Topbar from "../../components/topbar/Topbar";
 import "./add.css";
-
+import { Helmet } from "react-helmet";
 export default function Add() {
   const [error, setError] = useState(false);
   const [value, setValue] = useState({
@@ -34,6 +34,10 @@ export default function Add() {
     }
   };
   return (
+    <>
+    <Helmet>
+<title>ADD</title>
+      </Helmet>
     <div className="outerContainer">
       <Topbar />
       <h4 className="pageTitle">ADDITION</h4>
@@ -73,5 +77,6 @@ export default function Add() {
         </div>
       </div>
     </div>
+    </>
   );
 }

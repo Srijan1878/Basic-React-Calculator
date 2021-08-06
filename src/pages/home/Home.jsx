@@ -1,9 +1,14 @@
 import React from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 export default function Home() {
     return (
+        <>
+        <Helmet>
+            <title>Home</title>
+            </Helmet>
         <div className="homeOuterContainer">
             <h4 className="homePageTitle">Home</h4>
             <div className="cardsContainer">
@@ -39,7 +44,7 @@ export default function Home() {
                 </div>
                 </div>
                 </Link>
-                <Link to="/subtract" style={{textDecoration:"none"}}>
+                <Link to="/divide" style={{textDecoration:"none"}}>
                 <div className="divideCard" id="card">                    
                 <h4 className="cardTitle">DIVIDE</h4>
                 <div className="customDivisionLogoMaker">
@@ -53,5 +58,6 @@ export default function Home() {
                 </Link>              
             </div>
         </div>
+        </>
     )
 }

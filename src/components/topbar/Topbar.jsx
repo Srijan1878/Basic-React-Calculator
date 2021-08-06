@@ -63,7 +63,7 @@ export default function Topbar() {
             Multiply
           </NavLink>
         </li>
-        <li>
+        <li style={{paddingRight:"18px"}}>
           <NavLink
             to="/divide"
             className="topbarListItem"
